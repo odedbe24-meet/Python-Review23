@@ -13,6 +13,7 @@ def dislike(video):
 def add_comment(video, username, comment_text):
 	video["Comments"][username] = comment_text
 	return video
+
 def add_hashtag(video):
 	while len(video["Hashtag"]) <=4:
 		hashtag = input("Would Like To Add A Hashtag? if yes just type it, else type n: ")
@@ -21,6 +22,9 @@ def add_hashtag(video):
 		else:
 			video["Hashtag"].append(hashtag)
 	
+
+def simil
+
 
 youtube_video = create_youtube_video(input("title: "), input("Description: "))
 print(youtube_video)
